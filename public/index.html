@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tetris</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: row;
+            }
+            #score{
+                display: inline-block;
+            }
+
+            div{
+                margin: 20px;
+                font-size: 25px;
+                font-weight: bold;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="first-canvas">
+            <canvas id="tetris" width="250" height="500"></canvas>
+        </div>
+        <div id="next-canvas">
+            <canvas id="next" width="150" height="150"></canvas>
+        </div>
+        <div>
+            Score : <div id="score">0</div>
+        </div>
+        <script src="js/tetrominoes.js"></script>
+        <script src="js/tetris.js"></script>
+    </body>
+</html>
